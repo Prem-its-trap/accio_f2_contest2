@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: #000;
+        color: white;
+        padding: 50px;
+        font-family: sans-serif;
+      }
+      .userDetails {
+        margin: 20px 0;
+        border: 1px solid white;
+      }
+      .btn {
+        background-color: white;
+        padding: 10px 40px;
+        border: none;
+        outline: none;
+      }
+      .addNewUser {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+      }
+      input[type="text"] {
+        height: 30px;
+        width: 100%;
+        border-radius: 5px;
+      }
+      #data {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        padding: 10px 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+      }
+    </style>
+    <title>DOM</title>
+  </head>
+  <body>
+    <span>Filter ui Cards via their profession</span><br /><br />
+
+    <select name="dropdown" id="dropdown">
+      <option value="Profession">Profession</option>
+      <option value="developer">developer</option>
+      <option value="admin">admin</option>
+    </select>
+
+    <div class="userDetails" id="userDetails"></div>
+    <button class="btn" id="btn">Filter</button>
+    <br /><br /><br />
+    <span>Add a New User</span>
+    <div class="addNewUser" id="addNewUser">
+      <div class="inputbox">
+        <label for="">Enter Name</label><br />
+        <input type="text" id="name" />
+      </div>
+      <div class="inputbox">
+        <label for="">Enter Profession</label><br />
+        <input type="text" id="prof" />
+      </div>
+      <div class="inputbox">
+        <label for="">Enter Age</label><br />
+        <input type="text" id="age" />
+      </div>
+      <br />
+    </div>
+    <br />
+    <button class="btn" id="addUserBtn">Add User</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
